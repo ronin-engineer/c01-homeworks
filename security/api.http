@@ -1,0 +1,16 @@
+### Login
+POST http://localhost:8080/api/v1/auth/login
+Content-Type: application/json
+
+{
+  "username": "roninPremium11",
+  "password": "123456"
+}
+
+### Get all posts premium (requried POST_PREMIUM_VIEW permission)
+GET http://localhost:8080/api/v1/posts/premium
+Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJyb25pblByZW1pdW0xIiwiaWF0IjoxNzEyODMxNDY2LCJleHAiOjE3MTI4MzIwNjYsInBlcm1pc3Npb25zIjpbIlBPU1RfRlJFRV9WSUVXIiwiUE9TVF9GUkVFX1ZJRVciLCJQT1NUX0ZSRUVfVklFVyIsIlBPU1RfUFJFTUlVTV9WSUVXIl19.110Iv4DaceljZ1SDZE2xf5dKSgiUzaqwIXP_PIJs8pmGhLLTVQgNrTTAAKSLdvdD
+
+### Get all posts free
+GET http://localhost:8080/api/v1/posts/free
+Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJyb25pbkZyZWUxIiwiaWF0IjoxNzEyODMwOTY0LCJleHAiOjE3MTI4MzE1NjQsInBlcm1pc3Npb25zIjpbIlBPU1RfRlJFRV9WSUVXIiwiUE9TVF9GUkVFX1ZJRVciXX0.GZ8i9a8RrgXvgB99fm3kn9psD4Z1Y0mJdp82ON_GYcGc1vZknopR6yWYMez21WHI
